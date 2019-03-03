@@ -174,8 +174,8 @@ public class EngineDiscoveryRequestResolver<T extends TestDescriptor> {
 		 *
 		 * @param resolverCreator the function that will be called to create the
 		 * {@link SelectorResolver} to be added.
-		 * @see InitializationContext
 		 * @return this builder for method chaining
+		 * @see InitializationContext
 		 */
 		public Builder<T> addSelectorResolver(Function<InitializationContext<T>, SelectorResolver> resolverCreator) {
 			resolverCreators.add(resolverCreator);
@@ -188,8 +188,8 @@ public class EngineDiscoveryRequestResolver<T extends TestDescriptor> {
 		 *
 		 * @param visitorCreator the function that will be called to create the
 		 * {@link TestDescriptor.Visitor} to be added.
-		 * @see InitializationContext
 		 * @return this builder for method chaining
+		 * @see InitializationContext
 		 */
 		public Builder<T> addTestDescriptorVisitor(
 				Function<InitializationContext<T>, TestDescriptor.Visitor> visitorCreator) {
