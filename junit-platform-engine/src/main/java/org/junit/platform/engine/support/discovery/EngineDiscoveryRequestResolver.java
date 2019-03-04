@@ -72,7 +72,7 @@ public class EngineDiscoveryRequestResolver<T extends TestDescriptor> {
 	 *         While there are selectors to be resolved, get the next one.
 	 *         Otherwise, the resolution is finished.
 	 *     </li>
-	 *     <ol>
+	 *     <li><ol>
 	 *         <li>
 	 *             Iterate over all registered {@linkplain SelectorResolver
 	 *             resolvers} in the order they were registered in and find the
@@ -88,7 +88,7 @@ public class EngineDiscoveryRequestResolver<T extends TestDescriptor> {
 	 *             Resolution resolution}, {@linkplain Match#expand() expand}
 	 *             its children and enqueue them as well.
 	 *         </li>
-	 *     </ol>
+	 *     </ol></li>
 	 *     <li>
 	 *         Iterate over all registered {@linkplain TestDescriptor.Visitor
 	 *         visitors} and let the engine test descriptor {@linkplain
