@@ -51,7 +51,7 @@ jobs:
         set -e
         export JAVA_HOME="${JAVA_HOME_11_X64}"
         ./gradlew --scan --stacktrace --warning-mode=all -PenableJaCoCo build jacocoRootReport
-        ls -FlasR build/reports/jacoco/jacocoRootReport
+        bash <(curl -s https://codecov.io/bash)
       displayName: Coverage
     - task: PublishCodeCoverageResults@1
       displayName: Publish Coverage Results
