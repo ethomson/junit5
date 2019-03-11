@@ -56,7 +56,9 @@ jobs:
     - task: PublishCodeCoverageResults@1
       displayName: Publish Coverage Results
       inputs:
+        codeCoverageTool: 'JaCoCo'
         summaryFileLocation: '**/build/reports/jacoco/jacocoRootReport/jacocoRootReport.xml'
+        reportDirectory: '**/build/reports/jacoco/jacocoRootReport'
 
 - job: publish_artifacts
   displayName: Publish Snapshot Artifacts
