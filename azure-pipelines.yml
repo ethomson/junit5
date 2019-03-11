@@ -19,6 +19,8 @@ jobs:
   container: openjdk:12
   steps:
     - template: src/azure/azure-gradle-step.yml
+      parameters:
+        publishTestResults: true
 
 - job: linux_13
   displayName: Linux (OpenJDK 13)
